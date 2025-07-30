@@ -16,7 +16,8 @@ const preOwnedProducts: Product[] = [
     storage: "32GB",
     price: 3100,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone7-black-select-2016?wid=470&hei=556&fmt=png-alpha&.v=1472430177971"
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone7-black-select-2016?wid=470&hei=556&fmt=png-alpha&.v=1472430177971",
   },
   {
     id: "iphone8plus",
@@ -24,7 +25,8 @@ const preOwnedProducts: Product[] = [
     storage: "64GB",
     price: 3800,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone8-plus-gold-select-2018?wid=470&hei=556&fmt=png-alpha&.v=1550795396391"
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone8-plus-gold-select-2018?wid=470&hei=556&fmt=png-alpha&.v=1550795396391",
   },
   {
     id: "iphonex",
@@ -32,7 +34,8 @@ const preOwnedProducts: Product[] = [
     storage: "64GB",
     price: 4750,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-x-silver-select-2017?wid=470&hei=556&fmt=png-alpha&.v=1515616783714"
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-x-silver-select-2017?wid=470&hei=556&fmt=png-alpha&.v=1515616783714",
   },
   {
     id: "iphone11",
@@ -40,8 +43,9 @@ const preOwnedProducts: Product[] = [
     storage: "64GB",
     price: 5200,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=470&hei=556&fmt=png-alpha&.v=1566956361132"
-  }
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=470&hei=556&fmt=png-alpha&.v=1566956361132",
+  },
 ];
 
 const firstHandProducts: Product[] = [
@@ -51,7 +55,8 @@ const firstHandProducts: Product[] = [
     storage: "128GB",
     price: 15000,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-gold-select?wid=470&hei=556&fmt=png-alpha&.v=1631652954000"
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-gold-select?wid=470&hei=556&fmt=png-alpha&.v=1631652954000",
   },
   {
     id: "iphone15promax",
@@ -59,7 +64,8 @@ const firstHandProducts: Product[] = [
     storage: "256GB",
     price: 24500,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-naturaltitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1693010033617"
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-naturaltitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1693010033617",
   },
   {
     id: "iphone15",
@@ -67,8 +73,9 @@ const firstHandProducts: Product[] = [
     storage: "128GB",
     price: 16800,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pink-select-202309?wid=470&hei=556&fmt=png-alpha&.v=1693660486326"
-  }
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pink-select-202309?wid=470&hei=556&fmt=png-alpha&.v=1693660486326",
+  },
 ];
 
 function ProductCard({ product }: { product: Product }) {
@@ -87,25 +94,37 @@ function ProductCard({ product }: { product: Product }) {
         ) : (
           <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
             <div className="text-gray-500 text-center">
-              <svg className="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+              <svg
+                className="w-12 h-12 mx-auto mb-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                  clipRule="evenodd"
+                />
               </svg>
               <span className="text-sm">{product.model}</span>
             </div>
           </div>
         )}
-        <div className={`absolute top-2 right-2 px-3 py-1 rounded-full text-xs font-semibold ${
-          product.condition === "Pre-Owned" 
-            ? "bg-orange-500 text-white" 
-            : "bg-green-500 text-white"
-        }`}>
+        <div
+          className={`absolute top-2 right-2 px-3 py-1 rounded-full text-xs font-semibold ${
+            product.condition === "Pre-Owned"
+              ? "bg-orange-500 text-white"
+              : "bg-green-500 text-white"
+          }`}
+        >
           {product.condition}
         </div>
       </div>
       <div className="text-center">
         <h3 className="text-xl font-bold text-white mb-1">{product.model}</h3>
         <p className="text-white/80 mb-3">{product.storage}</p>
-        <p className="text-2xl font-bold text-yellow-300">R{product.price.toLocaleString()}</p>
+        <p className="text-2xl font-bold text-yellow-300">
+          R{product.price.toLocaleString()}
+        </p>
       </div>
     </div>
   );
@@ -120,8 +139,12 @@ function WhatsAppButton() {
       className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 group"
       aria-label="Contact us on WhatsApp"
     >
-      <svg className="w-8 h-8 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.130.332.202c.045.072.045.419-.1.824z"/>
+      <svg
+        className="w-8 h-8 group-hover:scale-110 transition-transform"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.130.332.202c.045.072.045.419-.1.824z" />
       </svg>
     </a>
   );
@@ -137,11 +160,17 @@ export default function Index() {
             Cndie's iPhone Collection
           </span>
         </h1>
-        <p className="text-xl text-white/90 mb-6">Premium iPhones in Richards Bay</p>
+        <p className="text-xl text-white/90 mb-6">
+          Premium iPhones in Richards Bay
+        </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-white/80">
           <div className="flex items-center gap-2">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clipRule="evenodd"
+              />
             </svg>
             <span>Richards Bay, South Africa</span>
           </div>
@@ -166,7 +195,9 @@ export default function Index() {
             </span>
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Discover our extensive collection of premium iPhones. From budget-friendly pre-owned devices to the latest first-hand models, we have the perfect iPhone for every need and budget.
+            Discover our extensive collection of premium iPhones. From
+            budget-friendly pre-owned devices to the latest first-hand models,
+            we have the perfect iPhone for every need and budget.
           </p>
           <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
@@ -201,7 +232,9 @@ export default function Index() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-white/80">iPhone 13 Pro Max (128GB)</span>
+                    <span className="text-white/80">
+                      iPhone 13 Pro Max (128GB)
+                    </span>
                     <span className="text-yellow-300 font-bold">R15,000</span>
                   </div>
                   <div className="flex justify-between items-center">
@@ -209,7 +242,9 @@ export default function Index() {
                     <span className="text-yellow-300 font-bold">R13,200</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-white/80">iPhone 15 Pro Max (256GB)</span>
+                    <span className="text-white/80">
+                      iPhone 15 Pro Max (256GB)
+                    </span>
                     <span className="text-yellow-300 font-bold">R24,500</span>
                   </div>
                   <div className="flex justify-between items-center">
@@ -221,9 +256,12 @@ export default function Index() {
             </div>
             <div className="mt-8 pt-6 border-t border-white/20">
               <p className="text-white/80 text-center">
-                <span className="text-yellow-400 font-semibold">All prices in South African Rand (ZAR)</span>
+                <span className="text-yellow-400 font-semibold">
+                  All prices in South African Rand (ZAR)
+                </span>
                 <br />
-                Contact 078 134 7169 via WhatsApp, SMS, or call to place your order
+                Contact 078 134 7169 via WhatsApp, SMS, or call to place your
+                order
               </p>
             </div>
           </div>
@@ -233,7 +271,9 @@ export default function Index() {
       {/* Pre-Owned Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Pre-Owned iPhones</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Pre-Owned iPhones
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full"></div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -246,7 +286,9 @@ export default function Index() {
       {/* First Hand Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">First Hand iPhones</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">
+            First Hand iPhones
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 mx-auto rounded-full"></div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -259,9 +301,12 @@ export default function Index() {
       {/* Footer */}
       <footer className="container mx-auto px-4 py-12 text-center">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-          <h3 className="text-2xl font-bold text-white mb-4">Ready to Order?</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Ready to Order?
+          </h3>
           <p className="text-white/90 mb-6">
-            Contact us now to secure your iPhone. All orders are processed through our contact number.
+            Contact us now to secure your iPhone. All orders are processed
+            through our contact number.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -269,7 +314,7 @@ export default function Index() {
               className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-flex items-center gap-2"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.130.332.202c.045.072.045.419-.1.824z"/>
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.130.332.202c.045.072.045.419-.1.824z" />
               </svg>
               WhatsApp Us
             </a>
