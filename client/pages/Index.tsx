@@ -59,7 +59,7 @@ const firstHandProducts: Product[] = [
     storage: "128GB",
     price: 13200,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14-blue-select-2022?wid=470&hei=556&fmt=png-alpha&.v=1661027886946"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-14-blue-2022?wid=470&hei=556&fmt=png-alpha&.v=1661027886946"
   },
   {
     id: "iphone15promax",
