@@ -16,7 +16,7 @@ const preOwnedProducts: Product[] = [
     storage: "32GB",
     price: 3100,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-7-black-select-2019?wid=940&hei=1112&fmt=png-alpha&.v=1551226036478"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone7-black-select-2016?wid=470&hei=556&fmt=png-alpha&.v=1472430177971"
   },
   {
     id: "iphone8plus",
@@ -24,7 +24,7 @@ const preOwnedProducts: Product[] = [
     storage: "64GB",
     price: 3800,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone8-plus-gold-select-2018?wid=940&hei=1112&fmt=png-alpha&.v=1550795396391"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone8-plus-gold-select-2018?wid=470&hei=556&fmt=png-alpha&.v=1550795396391"
   },
   {
     id: "iphonex",
@@ -32,7 +32,7 @@ const preOwnedProducts: Product[] = [
     storage: "64GB",
     price: 4750,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-x-silver-select-2017?wid=940&hei=1112&fmt=png-alpha&.v=1515616783714"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-x-silver-select-2017?wid=470&hei=556&fmt=png-alpha&.v=1515616783714"
   },
   {
     id: "iphone11",
@@ -40,7 +40,7 @@ const preOwnedProducts: Product[] = [
     storage: "64GB",
     price: 5200,
     condition: "Pre-Owned",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-purple-select-2019?wid=940&hei=1112&fmt=png-alpha&.v=1566956144763"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-purple-select-2019?wid=470&hei=556&fmt=png-alpha&.v=1566956361132"
   }
 ];
 
