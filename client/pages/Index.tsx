@@ -59,7 +59,7 @@ const firstHandProducts: Product[] = [
     storage: "128GB",
     price: 13200,
     condition: "First Hand",
-    image: "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-14_iPhone-14-Plus_hero_220907.jpg.og.jpg?202209070831"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-starlight-select-2022?wid=470&hei=556&fmt=png-alpha&.v=1661027886946"
   },
   {
     id: "iphone15promax",
