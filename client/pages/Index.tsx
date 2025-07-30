@@ -54,12 +54,12 @@ const firstHandProducts: Product[] = [
     image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-gold-select?wid=470&hei=556&fmt=png-alpha&.v=1631652954000"
   },
   {
-    id: "iphone14",
-    model: "iPhone 14",
+    id: "iphone12pro",
+    model: "iPhone 12 Pro",
     storage: "128GB",
     price: 13200,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-starlight-select-2022?wid=470&hei=556&fmt=png-alpha&.v=1661027886946"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-gold-select-2020?wid=470&hei=556&fmt=png-alpha&.v=1604021661000"
   },
   {
     id: "iphone15promax",
