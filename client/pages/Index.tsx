@@ -51,7 +51,7 @@ const firstHandProducts: Product[] = [
     storage: "128GB",
     price: 15000,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-gold-select?wid=940&hei=1112&fmt=png-alpha&.v=1631652954000"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-gold-select?wid=470&hei=556&fmt=png-alpha&.v=1631652954000"
   },
   {
     id: "iphone14",
@@ -59,7 +59,7 @@ const firstHandProducts: Product[] = [
     storage: "128GB",
     price: 13200,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-blue-select-2022?wid=940&hei=1112&fmt=png-alpha&.v=1660780674784"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-blue-select-2022?wid=470&hei=556&fmt=png-alpha&.v=1660780674784"
   },
   {
     id: "iphone15promax",
@@ -67,7 +67,7 @@ const firstHandProducts: Product[] = [
     storage: "256GB",
     price: 24500,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-naturaltitanium-select?wid=940&hei=1112&fmt=png-alpha&.v=1693010033617"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-naturaltitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1693010033617"
   },
   {
     id: "iphone15",
@@ -75,7 +75,7 @@ const firstHandProducts: Product[] = [
     storage: "128GB",
     price: 16800,
     condition: "First Hand",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pink-select-202309?wid=940&hei=1112&fmt=png-alpha&.v=1693660486326"
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pink-select-202309?wid=470&hei=556&fmt=png-alpha&.v=1693660486326"
   }
 ];
 
