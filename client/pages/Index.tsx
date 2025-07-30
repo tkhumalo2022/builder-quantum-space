@@ -157,6 +157,79 @@ export default function Index() {
         </p>
       </header>
 
+      {/* Catalog Introduction */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-white mb-6">
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              Our iPhone Catalog
+            </span>
+          </h2>
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+            Discover our extensive collection of premium iPhones. From budget-friendly pre-owned devices to the latest first-hand models, we have the perfect iPhone for every need and budget.
+          </p>
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="text-left">
+                <h3 className="text-2xl font-bold text-orange-400 mb-4 flex items-center gap-3">
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
+                  Pre-Owned Collection
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone 7 (32GB)</span>
+                    <span className="text-yellow-300 font-bold">R3,100</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone 8 Plus (64GB)</span>
+                    <span className="text-yellow-300 font-bold">R3,800</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone X (64GB)</span>
+                    <span className="text-yellow-300 font-bold">R4,750</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone 11 (64GB)</span>
+                    <span className="text-yellow-300 font-bold">R5,200</span>
+                  </div>
+                </div>
+              </div>
+              <div className="text-left">
+                <h3 className="text-2xl font-bold text-green-400 mb-4 flex items-center gap-3">
+                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                  First Hand Collection
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone 13 Pro Max (128GB)</span>
+                    <span className="text-yellow-300 font-bold">R15,000</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone 14 (128GB)</span>
+                    <span className="text-yellow-300 font-bold">R13,200</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone 15 Pro Max (256GB)</span>
+                    <span className="text-yellow-300 font-bold">R24,500</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-white/80">iPhone 15 (128GB)</span>
+                    <span className="text-yellow-300 font-bold">R16,800</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 pt-6 border-t border-white/20">
+              <p className="text-white/80 text-center">
+                <span className="text-yellow-400 font-semibold">All prices in South African Rand (ZAR)</span>
+                <br />
+                Contact 078 134 7169 via WhatsApp, SMS, or call to place your order
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pre-Owned Section */}
       <section className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
